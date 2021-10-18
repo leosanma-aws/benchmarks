@@ -395,8 +395,6 @@ def get_gpu_info():
     A dict containing gpu_driver_version, gpu_model and gpu_count or None if
     `nvidia-smi` is not found or fails.
   """
-  return None
-  # TODO: Add support for getting Habana driver info
   return _get_amd_gpu_info() if shutil.which("rocm-smi") \
     else _get_nvidia_gpu_info()
 
