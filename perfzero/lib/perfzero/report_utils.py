@@ -75,8 +75,7 @@ def upload_execution_summary(bigquery_project_name, bigquery_dataset_table_name,
     bigquery_dataset_table_name: data_set and table name.
     execution_summary: benchmark summary dictionary of results.
   """
-  return None
-  # TODO: Implement execution summary upload that doesn't require Google BigQuery
+
   # pylint: disable=C6204
   import google.auth
   from google.cloud import bigquery
